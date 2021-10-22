@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Webpack starter template</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="author" content="Alex Canana">
+  <meta name="description" content="Webpack starter template">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/hk-grotesk.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href = "../../style.css">
+  <link rel="stylesheet" href="./css/main.b9c4f3b60b7e33f4bf9c.min.css">
+<link href="/css/main.b9c4f3b60b7e33f4bf9c.min.css" rel="stylesheet"></head>
+<body >
+<!--    start navbar-->
+
+<div class="container mx-auto lg:hidden block " id = "uppernav">
+  <div class="flex items-center justify-around">
+    <img src = "../../assets/logo.svg" alt = "logo">
+    <span class="lg:hidden flex text-white meunuIndictor flex"  id = "open" > <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M23.2842 20.4775H2.97168C2.76448 20.4775 2.56577 20.5598 2.41925 20.7064C2.27274 20.8529 2.19043 21.0516 2.19043 21.2588V22.8213C2.19043 23.0285 2.27274 23.2272 2.41925 23.3737C2.56577 23.5202 2.76448 23.6025 2.97168 23.6025H23.2842C23.4914 23.6025 23.6901 23.5202 23.8366 23.3737C23.9831 23.2272 24.0654 23.0285 24.0654 22.8213V21.2588C24.0654 21.0516 23.9831 20.8529 23.8366 20.7064C23.6901 20.5598 23.4914 20.4775 23.2842 20.4775ZM23.2842 14.2275H2.97168C2.76448 14.2275 2.56577 14.3098 2.41925 14.4564C2.27274 14.6029 2.19043 14.8016 2.19043 15.0088V16.5713C2.19043 16.7785 2.27274 16.9772 2.41925 17.1237C2.56577 17.2702 2.76448 17.3525 2.97168 17.3525H23.2842C23.4914 17.3525 23.6901 17.2702 23.8366 17.1237C23.9831 16.9772 24.0654 16.7785 24.0654 16.5713V15.0088C24.0654 14.8016 23.9831 14.6029 23.8366 14.4564C23.6901 14.3098 23.4914 14.2275 23.2842 14.2275ZM23.2842 7.97754H2.97168C2.76448 7.97754 2.56577 8.05985 2.41925 8.20636C2.27274 8.35288 2.19043 8.55159 2.19043 8.75879V10.3213C2.19043 10.5285 2.27274 10.7272 2.41925 10.8737C2.56577 11.0202 2.76448 11.1025 2.97168 11.1025H23.2842C23.4914 11.1025 23.6901 11.0202 23.8366 10.8737C23.9831 10.7272 24.0654 10.5285 24.0654 10.3213V8.75879C24.0654 8.55159 23.9831 8.35288 23.8366 8.20636C23.6901 8.05985 23.4914 7.97754 23.2842 7.97754ZM23.2842 1.72754H2.97168C2.76448 1.72754 2.56577 1.80985 2.41925 1.95636C2.27274 2.10287 2.19043 2.30159 2.19043 2.50879V4.07129C2.19043 4.27849 2.27274 4.4772 2.41925 4.62372C2.56577 4.77023 2.76448 4.85254 2.97168 4.85254H23.2842C23.4914 4.85254 23.6901 4.77023 23.8366 4.62372C23.9831 4.4772 24.0654 4.27849 24.0654 4.07129V2.50879C24.0654 2.30159 23.9831 2.10287 23.8366 1.95636C23.6901 1.80985 23.4914 1.72754 23.2842 1.72754V1.72754Z" fill="white"/>
+</svg>
+ </span>
+  </div>
+</div>
+
+<nav id = "navbar" class="flex  justify-center invisible  transition-all  transition ease-in duration-700  transform lg:flex-row items-center lg:visible bg-blacks lg:bg-transparent lg:flex  h-full  z-30  fixed lg:static pt-28px justify-between container mx-auto flex-col">
+  <span class="lg:hidden flex text-white meunuIndictor" id = "meunuIndictor"> <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M23.2842 20.4775H2.97168C2.76448 20.4775 2.56577 20.5598 2.41925 20.7064C2.27274 20.8529 2.19043 21.0516 2.19043 21.2588V22.8213C2.19043 23.0285 2.27274 23.2272 2.41925 23.3737C2.56577 23.5202 2.76448 23.6025 2.97168 23.6025H23.2842C23.4914 23.6025 23.6901 23.5202 23.8366 23.3737C23.9831 23.2272 24.0654 23.0285 24.0654 22.8213V21.2588C24.0654 21.0516 23.9831 20.8529 23.8366 20.7064C23.6901 20.5598 23.4914 20.4775 23.2842 20.4775ZM23.2842 14.2275H2.97168C2.76448 14.2275 2.56577 14.3098 2.41925 14.4564C2.27274 14.6029 2.19043 14.8016 2.19043 15.0088V16.5713C2.19043 16.7785 2.27274 16.9772 2.41925 17.1237C2.56577 17.2702 2.76448 17.3525 2.97168 17.3525H23.2842C23.4914 17.3525 23.6901 17.2702 23.8366 17.1237C23.9831 16.9772 24.0654 16.7785 24.0654 16.5713V15.0088C24.0654 14.8016 23.9831 14.6029 23.8366 14.4564C23.6901 14.3098 23.4914 14.2275 23.2842 14.2275ZM23.2842 7.97754H2.97168C2.76448 7.97754 2.56577 8.05985 2.41925 8.20636C2.27274 8.35288 2.19043 8.55159 2.19043 8.75879V10.3213C2.19043 10.5285 2.27274 10.7272 2.41925 10.8737C2.56577 11.0202 2.76448 11.1025 2.97168 11.1025H23.2842C23.4914 11.1025 23.6901 11.0202 23.8366 10.8737C23.9831 10.7272 24.0654 10.5285 24.0654 10.3213V8.75879C24.0654 8.55159 23.9831 8.35288 23.8366 8.20636C23.6901 8.05985 23.4914 7.97754 23.2842 7.97754ZM23.2842 1.72754H2.97168C2.76448 1.72754 2.56577 1.80985 2.41925 1.95636C2.27274 2.10287 2.19043 2.30159 2.19043 2.50879V4.07129C2.19043 4.27849 2.27274 4.4772 2.41925 4.62372C2.56577 4.77023 2.76448 4.85254 2.97168 4.85254H23.2842C23.4914 4.85254 23.6901 4.77023 23.8366 4.62372C23.9831 4.4772 24.0654 4.27849 24.0654 4.07129V2.50879C24.0654 2.30159 23.9831 2.10287 23.8366 1.95636C23.6901 1.80985 23.4914 1.72754 23.2842 1.72754V1.72754Z" fill="white"/>
+</svg>
+ </span>
+  <div class="flex items-center ">
+    <ul class="lg:flex flex gap-10 lg:gap-0  items-center justify-center lg:flex-row flex-col  ">
+      <img src = "../../assets/logo.svg" alt = "logo" class="mx-50px">
+      <li class=" cursor-pointer text-white text-16px leading-24px font-medium capitalize mx-20px transition duration-500 ease-in-out   transform  hover:text-extragold  hover:-translate-y-1 hover:scale-110"> <a href="./index.html">  Home</a>  </li>
+      <li class=" cursor-pointer text-white text-16px leading-24px font-medium capitalize mx-20px transition duration-500 ease-in-out   transform  hover:text-extragold hover:-translate-y-1 hover:scale-110"> <a href="./menu.html">  Menu</a>  </li>
+      <li class=" cursor-pointer text-white text-16px leading-24px font-medium capitalize mx-20px transition duration-500 ease-in-out   transform  hover:text-extragold hover:-translate-y-1 hover:scale-110"> <a href="./about.html" > About US</a> </li>
+      <li class=" cursor-pointer text-white text-16px leading-24px font-medium capitalize mx-20px transition duration-500 ease-in-out   transform  hover:text-extragold hover:-translate-y-1 hover:scale-110"> <a href="./story.html">Our Story</a> </li>
+      <li class=" cursor-pointer text-white text-16px leading-24px font-medium capitalize mx-20px transition duration-500 ease-in-out   transform  hover:text-extragold hover:-translate-y-1 hover:scale-110"> Blog </li>
+      <li class=" cursor-pointer text-white text-16px leading-24px font-medium capitalize mx-20px transition duration-500 ease-in-out   transform hover:text-extragold  hover:-translate-y-1 hover:scale-110"> Contact </li>
+
+    </ul>
+  </div>
+  <button class="flex items-center text-brown font-medium text-16px gap-4 leading-24px motion-safe:animate-spin
+transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110
+">
+    Clone Project
+    <svg width="21" height="8" viewBox="0 0 21 8" fill="none" xmlns="http://www.w3.org/2000/svg" >
+      <path d="M20.3536 4.35355C20.5488 4.15829 20.5488 3.84171 20.3536 3.64645L17.1716 0.464466C16.9763 0.269204 16.6597 0.269204 16.4645 0.464466C16.2692 0.659728 16.2692 0.976311 16.4645 1.17157L19.2929 4L16.4645 6.82843C16.2692 7.02369 16.2692 7.34027 16.4645 7.53553C16.6597 7.7308 16.9763 7.7308 17.1716 7.53553L20.3536 4.35355ZM0 4.5L20 4.5V3.5L0 3.5L0 4.5Z" fill="white"/>
+    </svg>
+
+  </button>
+</nav>
+
+
+<section id = "about" class="pt-160px" >
+  <div  class="flex justify-between container mx-auto flex-col lg:flex-row " data-aos="zoom-out">
+    <div class="">
+      <h4 class="text-extragold text-16px leading-24px text-center lg:text-left text-center lg:text-left  flex items-center gap-5
+"> Know more about us
+        <svg width="48" height="1" viewBox="0 0 48 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <line y1="0.500488" x2="48" y2="0.500488" stroke="white"/>
+        </svg>
+      </h4>
+      <h2 class="text-white text-48px leading-58px font-bold fonts mt-24px text-center lg:text-left  mb-32px"> We source sustainable & <br> line caught Foods </h2>
+      <p class="text-16px text-grays text-center lg:text-left  leading-28px">Edit this text to make it your own. To edit, simply click directly on the text to<br> start adding your own words. You can move the text by dragging and<br> dropping the text anywhere on the page. </p>
+      <div class="grid lg:grid-cols-3 grid-cols-2 mt-44px gap-8">
+
+        <div class="transition ease-in duration-700  transform  text-center lg:text-left    hover:-translate-y-1 hover:scale-110 cursor-pointer  text-white">
+          <h3 class="flex text-24px leading36px text-blues">
+            <svg width="13" height="31" viewBox="0 0 13 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0 4H13V20H6.5C2.91015 20 0 17.0899 0 13.5V4Z" fill="#FFB577"/>
+              <path d="M8 23H13V31H10.5C9.11929 31 8 29.8807 8 28.5V23Z" fill="#FFB577"/>
+              <rect width="5" height="2" rx="1" fill="#FFB577"/>
+            </svg>
+            10+ People</h3>
+          <p class="text-grays text-16px leading-28px font-medium">  We are Small Team</p>
+
+          <div class="mt-15px">
+            <p class="text-grays text-16px leading-28px">
+              Through True Rich <br>  Attended does no end  <br> it his mother since <br> favourable.
+            </p>
+          </div>
+        </div>
+
+
+        <div class="transition ease-in duration-700  transform    hover:-translate-y-1 hover:scale-110 cursor-pointer">
+          <h3 class="flex text-24px leading36px text-blues">
+            <svg width="13" height="31" viewBox="0 0 13 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0 4H13V20H6.5C2.91015 20 0 17.0899 0 13.5V4Z" fill="#FFB577"/>
+              <path d="M8 23H13V31H10.5C9.11929 31 8 29.8807 8 28.5V23Z" fill="#FFB577"/>
+              <rect width="5" height="2" rx="1" fill="#FFB577"/>
+            </svg>
+            10+ People</h3>
+          <p class="text-grays text-16px leading-28px font-medium">  We are Small Team</p>
+
+          <div class="mt-15px">
+            <p class="text-grays text-16px leading-28px">
+              Through True Rich <br>  Attended does no end  <br> it his mother since <br> favourable.
+            </p>
+          </div>
+        </div>
+
+        <div class="transition ease-in duration-700  transform    hover:-translate-y-1 hover:scale-110 cursor-pointer" >
+          <h3 class="flex text-24px leading36px text-blues  text-center lg:text-left">
+            <svg width="13" height="31" viewBox="0 0 13 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0 4H13V20H6.5C2.91015 20 0 17.0899 0 13.5V4Z" fill="#FFB577"/>
+              <path d="M8 23H13V31H10.5C9.11929 31 8 29.8807 8 28.5V23Z" fill="#FFB577"/>
+              <rect width="5" height="2" rx="1" fill="#FFB577"/>
+            </svg>
+            10+ People</h3>
+          <p class="text-grays text-16px leading-28px font-medium text-center lg:text-left ">  We are Small Team</p>
+
+          <div class="mt-15px">
+            <p class="text-grays text-16px leading-28px text-center lg:text-left ">
+              Through True Rich <br>  Attended does no end  <br> it his mother since <br> favourable.
+            </p>
+          </div>
+        </div>
+
+
+      </div>
+
+      <button class="mt-32px text-black  mx-auto transition ease-in duration-700  lg:mx-0 transform    hover:-translate-y-1 hover:scale-110 bg-extragold py-12px px-24px flex items-center outline-none border-none ">
+        View Meun
+        <svg width="21" height="8" viewBox="0 0 21 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M20.3536 4.35355C20.5488 4.15829 20.5488 3.84171 20.3536 3.64645L17.1716 0.464466C16.9763 0.269204 16.6597 0.269204 16.4645 0.464466C16.2692 0.659728 16.2692 0.976311 16.4645 1.17157L19.2929 4L16.4645 6.82843C16.2692 7.02369 16.2692 7.34027 16.4645 7.53553C16.6597 7.7308 16.9763 7.7308 17.1716 7.53553L20.3536 4.35355ZM0 4.5L20 4.5V3.5L0 3.5L0 4.5Z" fill="#2E2D33"/>
+        </svg>
+
+
+      </button>
+
+
+    </div>
+    <div class="lg:flex lg:gap-16 grid grid-cols-1   ">
+      <img src = "../../assets/Know%201.png" alt = "know more" class="relative top-80px">
+      <img src = "../../assets/Know%202.png" alt = "know more">
+    </div>
+  </div>
+
+
+
+</section>
+
+<section class="pt-160px">
+  <div class="container mx-auto">
+    <div class="relative">
+      <img src = "../../assets/BG.jpg" alt = "bg">
+      <div class="lg:absolute lg:top-0  relative background  w-full h-full ">
+        <div class="mx-auto pt-124px pb-124px pl-80px">
+          <h2 class="font-bold  text-20px lg:text-48px leading-58px  text-white">
+            One of the best
+            Cafes <br> in <span class="text-godlen">
+          New York
+        </span>
+          </h2>
+          <p class="text-white font-medium text-16px leading-28px">
+            Through True Rich Attended does no end it his mother <br>
+            since favourable real had half every him case in <br>
+            packages enquire we up ecstatic
+            Through True Rich <br> Attended does no end it his mother
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+
+<section class="pt-160px">
+  <div class="container mx-auto">
+    <div class="grid grid-cols-1 lg:grid-cols-2">
+      <h2 class="text-white lg:text-48px text-20px leading-58px text-center"> Things our company  <br>  stands for </h2>
+      <div>
+        <h3 class="text-white font-bold text-20px leading-48px  text-center"> Edit this text to make it your own. To <br> edit, simply click directly</h3>
+        <p class="text-grays text-16px leading-28px mt-24px text-center">
+          Writing UX copies can be a little frustrating and confusing, and <br>
+          sometimes we are unsure about how to get the right word. To <br>
+          crack the code for the UX copies, we at Zeta Design wanted to build <br>
+          a Figma plugin for the larger design community. The plugin is <br>
+          called the Ghost UXWriter and has a set of UX copies cataloged and categorized <br>
+          with a voice and tone variation ranging from <br>
+          plain, casual to playful. The intention to build this Figma plugin <br>
+          originated from our Medium blog post, ‘Designing voice and tone <br>
+          for error messages.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<footer class="pt-160px" data-aos="fade-up" >
+  <div class="container mx-auto">
+    <div class="grid grid-cols-1  lg:grid-cols-2">
+      <div class="bg-cardblack pb-80px pt-80px pl-64px">
+        <div class="mx-auto lg:mx-0">
+          <h3 class="text-white text-20px leading-30px font-bold pb-32px">Wokring hours </h3>
+          <p class="text-grays text-16px leading-28px">Sunday to Saturday <br>
+            09:00 AM to 11:00 PM </p>
+        </div>
+
+
+        <div>
+          <h3 class="text-white text-20px leading-30px font-bold pb-32px"> Location </h3>
+          <p class="text-grays text-16px leading-28px">Street - 127, New York,<br>United States<br>
+            546544
+          </p>
+        </div>
+
+        <div>
+          <h3 class="text-white text-20px leading-30px font-bold pb-32px"> Contact us  </h3>
+          <p class="text-grays text-16px leading-28px">
+            +123456789<br>
+            hey@yourdomain.com
+          </p>
+        </div>
+
+      </div>
+      <div>
+        <img src = "../../assets/Map.png" class="h-full" alt = "map">
+      </div>
+    </div>
+  </div>
+</footer>
+<nav class="flex lg:flex-row items-center  pt-160px justify-between container mx-auto flex-col">
+  <div class="container mx-auto">
+    <div class="flex items-center flex-col ">
+      <img src = "../../assets/logo.svg" alt = "logo" class="mx-50px pb-42px">
+
+      <ul class="lg:flex items-center lg:flex-row flex-col hidden ">
+
+        <li class="text-white text-16px leading-24px font-medium capitalize mx-20px"> Home </li>
+        <li class="text-white text-16px leading-24px font-medium capitalize mx-20px"> Menu </li>
+        <li class="text-white text-16px leading-24px font-medium capitalize mx-20px"> About Us </li>
+        <li class="text-white text-16px leading-24px font-medium capitalize mx-20px"> Our Story </li>
+        <li class="text-white text-16px leading-24px font-medium capitalize mx-20px"> Blog </li>
+        <li class="text-white text-16px leading-24px font-medium capitalize mx-20px"> Contact </li>
+
+      </ul>
+    </div>
+  </div>
+
+</nav>
+<hr>
+
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+<script src = "../js/main.js"></script>
+<script type="text/javascript" src="/js/bundle.ad9aeb77330db615b336.min.js"></script></body>
+</html>
+
+
+</body>
+</html>
